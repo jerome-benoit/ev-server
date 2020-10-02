@@ -87,7 +87,7 @@ jobs:
     - name: npm run start:devbuild
       run: |
         npm run start:email &
-        npm run start:devbuild &
+        npm run start:devbuild
     - name: npm run mochatest:createContext
       run: |
         if [ ! -d test/config ]; then mkdir -p test/config; fi
